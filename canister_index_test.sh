@@ -1,0 +1,1 @@
+dfx deploy --network=ic --with-cycles 600000000000 tN3QE_index --argument '(opt variant{Init = record {ledger_id = principal "hyiyv-saaaa-aaaal-asnsq-cai"; retrieve_blocks_from_ledger_interval_seconds = opt 10;}})'

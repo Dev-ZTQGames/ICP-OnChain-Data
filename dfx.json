@@ -1,0 +1,24 @@
+{
+  "canisters": {
+    "tN3QE_index": {
+      "type": "custom",
+      "candid": "icrc1_index.did",
+      "wasm": "icrc1_index.wasm"
+    },
+    "tN3QE_ledger": {
+      "type" : "custom",
+      "candid": "icrc1_ledger.did",
+      "wasm": "icrc1_ledger.wasm"
+    }
+
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
+
