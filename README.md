@@ -1,7 +1,7 @@
 # ICP Index & Ledger Canister
 
 ## Overview
-This project contains two main canisters designed for **Nebula3GameFi** and **Aurorahunt**, as well as games under these platforms:
+This project contains two main canisters designed for **Nebula3GameFi**, as well as games under these platforms:
 
 1. **Index Canister** – Centralized index that collects and stores user interaction data and token-related events across the platform.  
 2. **Ledger Canister** – Official ICP Ledger for minting, burning, and transferring platform tokens with memo support.
