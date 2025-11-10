@@ -1,12 +1,15 @@
 # ICP Index & Ledger Canister
 
 ## Overview
-This project contains two main canisters:
+This project contains two main canisters designed for **Nebula3GameFi** and **Aurorahunt**, as well as games under these platforms:
 
-1. **Index Canister** – Centralized index for managing users, assets, and events across the ICP ecosystem.  
-2. **Ledger Canister** – Official ICP Ledger for minting, burning, and transferring tokens or assets, compliant with ICP standards.
+1. **Index Canister** – Centralized index that collects and stores user interaction data and token-related events across the platform.  
+2. **Ledger Canister** – Official ICP Ledger for minting, burning, and transferring platform tokens with memo support.
 
-These canisters work together to provide a scalable, auditable, and secure token management system.
+The system provides a scalable, auditable, and secure way to store game user interactions and token operations on-chain.
+
+> **Platform Use Case:** Records and indexes user activities such as login, logout, task completion, in-game item purchases, etc.  
+> Data is collected every **5 minutes**, covering the previous 5 minutes of activity, and then pushed on-chain.
 
 ## Features
 
@@ -24,6 +27,11 @@ These canisters work together to provide a scalable, auditable, and secure token
   - `burn(from, amount)` – Burn tokens from a specific account (admin only).  
 - **Event Logging** – Emits events for all ledger operations for auditing and verification.  
 - **Integration with Index Canister** – Ledger operations can update the index canister to maintain synchronized state.
+
+## Permissions & Security
+- **Standard ICP Ledger**: All other operations follow ICP default permissions.  
+- **Auditability**: Every mint and burn operation includes a memo for clear event tracing.  
+- **Secure**: Only authorized principals can perform sensitive operations; read-only queries are publicly accessible.  
 
 ## Technology Stack
 - **Language**: Motoko / Rust  
